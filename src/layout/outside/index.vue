@@ -22,6 +22,5 @@
     display: flex;
     flex-direction: column;
     background-color: #f0f0f1;
-    padding-left: 65px;
   }
 </style>

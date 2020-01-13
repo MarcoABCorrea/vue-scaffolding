@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Dashboards from '../views/Dashboards.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,15 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/dashboards',
+    name: 'dashboards',
+    component: Dashboards
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
 ]
 

@@ -25,7 +25,9 @@ import {
   Option,
   Dialog,
   Scrollbar,
-  Icon
+  Icon,
+  RadioButton,
+  MenuItemGroup
 } from 'element-ui'
 
 locale.use(en)
@@ -50,6 +52,8 @@ Vue.use(Select)
 Vue.use(Option)
 Vue.use(Dialog)
 Vue.use(Icon)
+Vue.use(RadioButton)
+Vue.use(MenuItemGroup)
 
 Vue.prototype.$loading = Loading.service
 Vue.prototype.$msgbox = MessageBox
