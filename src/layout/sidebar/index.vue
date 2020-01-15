@@ -1,6 +1,6 @@
 <template>
-  <el-menu id="sidebar-menu" default-active="2" :collapse="isCollapse">
-    <el-menu-item index="2" @click="isCollapse = !isCollapse">
+  <el-menu id="sidebar-menu" :collapse="isCollapse">
+    <el-menu-item index="1" @click="isCollapse = !isCollapse">
       <img src="@/assets/logo.svg" alt="" />
     </el-menu-item>
     <router-link :to="'/'">

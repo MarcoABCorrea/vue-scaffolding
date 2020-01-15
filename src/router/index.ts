@@ -1,28 +1,32 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Dashboards from '../views/Dashboards.vue'
+import Router from 'vue-router'
+import NotFound from '@/views/NotFound.vue'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: () => import('@/views/Home.vue')
   },
   {
     path: '/dashboards',
     name: 'dashboards',
-    component: Dashboards
+    component: () => import('@/views/Dashboards.vue')
+  },
+  {
+    path: '/not-found',
+    name: 'notFound',
+    component: NotFound
   },
   {
     path: '*',
-    redirect: '/'
+    redirect: '/not-found'
   }
 ]
 
-const router = new VueRouter({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
