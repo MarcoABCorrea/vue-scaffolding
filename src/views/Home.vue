@@ -1,11 +1,15 @@
 <template>
   <div class="home">
-    <h1>This is an home page</h1>
+    <Title text-title="Home Page" />
   </div>
 </template>
 
 <script lang="ts">
-  import { Vue } from 'vue-property-decorator'
+  import { Component, Vue } from 'vue-property-decorator'
+  import Title from '@/components/title/Title.vue'
 
+  @Component({
+    components: { Title }
+  })
   export default class Home extends Vue {}
 </script>
