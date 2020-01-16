@@ -41,3 +41,10 @@ npm run lint
 ```
 npm run test:unit
 ```
+
+## TODO
+
+* Add Vuex
+* Add sidebar activator
+* Add footer
+* Add SCSS variables to separete file
