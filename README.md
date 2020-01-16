@@ -41,8 +41,3 @@ npm run lint
 ```
 npm run test:unit
 ```
-
-## TODO
-
-- Add Sidebar with links
-- Each component should work on it's on
